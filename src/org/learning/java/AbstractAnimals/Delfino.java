@@ -1,6 +1,6 @@
 package org.learning.java.AbstractAnimals;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements CanSwim{
   public Delfino(String name) {
     super(name);
   }
@@ -12,6 +12,12 @@ public class Delfino extends Animale {
   
   @Override
   public void verse() {
-    System.out.print("Yi yi yi");
+    System.out.println("Yi yi yi");
+  }
+  
+  @Override
+  public void swim() {
+    System.out.println("Sto nuotando!");
+  
   }
 }

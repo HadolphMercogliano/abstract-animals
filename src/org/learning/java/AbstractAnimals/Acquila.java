@@ -1,6 +1,6 @@
 package org.learning.java.AbstractAnimals;
 
-public class Acquila extends Animale {
+public class Acquila extends Animale implements CanFly {
   public Acquila(String name) {
     super(name);
   }
@@ -12,6 +12,12 @@ public class Acquila extends Animale {
   
   @Override
   public void verse() {
-    System.out.print("Yaaaaaaaaaaaaaaaaaaaa");
+    System.out.println("Yaaaaaaaaaaaaaaaaaaaa");
+  }
+  
+  @Override
+  public void fly() {
+    System.out.println("Sto volando!");
+  
   }
 }
