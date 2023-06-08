@@ -28,7 +28,7 @@ public class Main {
       animale.sleep();
       if(animale instanceof CanFly){
         makeFly((CanFly) animale);
-      } else {
+      } else if(animale instanceof CanSwim) {
         makeSwim((CanSwim) animale);
       }
       System.out.print("\n");
