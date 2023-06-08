@@ -1,9 +1,9 @@
 package org.learning.java.AbstractAnimals;
 
-public abstract class Animal {
+public abstract class Animale {
   private String name;
   
-  public Animal(String name) {
+  public Animale(String name) {
     this.name = name;
   }
   
@@ -14,10 +14,10 @@ public abstract class Animal {
   public void setName(String name) {
     this.name = name;
   }
-  void sleep() {
+  public void sleep() {
     System.out.println("Zzz");
   };
-  void eat() {};
-  void verse() {};
+  public abstract void eat();
+  public abstract void verse();
   
 }
